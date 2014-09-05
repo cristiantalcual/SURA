@@ -1,0 +1,14 @@
+Dado que inicio el juego, cuando paso la pantalla de bienvenida, debo ver el tablero del juego.
+
+Dado que inicio el juego, cuando paso la pantalla de bienvenida, debo ver el poste del ahorcado.
+
+Dado que inicio el juego, cuando paso la pantalla de bienvenida, debo ver los espacios de la palabra "suramericana".
+
+Dado que inicio el juego, cuando veo espacios de "suramericana", debo digitar la letra "z" y presionar el boton "Adivinar".
+
+
+
+
+
+cuando. Digito una letra, hago clic en iniciar en el boton adivinar y la letra no hace parte de la palabra generada.
+entonces. el sistema deberá restar cinco puntos a mi marcador actual

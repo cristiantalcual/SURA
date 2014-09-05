@@ -1,0 +1,36 @@
+	
+
+	
+	
+	Scenario: Primer error del jugador
+	Given inicio el juego
+	And intento adivinar la palabra presionando el boton "Adivinar"
+	And el numero de fallo es "1"
+	Then debo ver la cabeza del ahorcado "i1.png"
+
+	Scenario: Soy ganador del juego
+	Given inicio el juego	
+	And la palabra a adivinar es "CARRO" la palabra adivinada es "CARRO"
+	Then debo ver el titulo el nombre "Bienvenido al Juego Ahorcado Cristian Ruby"
+
+
+Scenario: Soy ganador del juego
+	Given inicio el juego	
+	And ingresa la letra "C" en el campo "letra"
+	And intento adivinar la palabra presionando "Adivinar"
+	And ingresa la letra "A" en el campo "letra"
+	And intento adivinar la palabra presionando "Adivinar"
+	And ingresa la letra "R" en el campo "letra"
+	And intento adivinar la palabra presionando "Adivinar"
+	And ingresa la letra "R" en el campo "letra"
+	And intento adivinar la palabra presionando "Adivinar"
+	And ingresa la letra "O" en el campo "letra"
+	And intento adivinar la palabra presionando "Adivinar"
+	Then debo ver el mensaje "Ha ganado!"
+
+
+Scenario: Soy ganador del juego
+	Given el juego ya esta iniciado	
+	And ingresa la letra "C" en el campo "letra"
+	Then intento adivinar la palabra presionando "Adivinar"
+
